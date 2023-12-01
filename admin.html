@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Área Administrativa</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="api.js"></script>
+  <script src="jquery-3.6.4.min.js"></script>
+</head>
+<body>
+
+<ul class="navbar">
+  <li><a href="index.html">Home</a></li>
+  <li><a href="contato.html">Contato</a></li>
+  <li><a href="admin.html">Área Admin</a></li>
+  <li><a href="mensagens.html">Mensagens Recebidas</a></li>
+</ul>
+
+<div class="content">
+  <h1 class="titulo-admin">Área Administrativa</h1>
+  <form class="form-login">
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" onchange="validarUsuario()" placeholder="Seu email...">
+    </div>
+    <div class="form-group">
+      <label for="senha">Senha:</label>
+      <input type="password" id="senha" onchange="validarUsuario()" name="senha" placeholder="Sua senha...">
+    </div>
+    <div class="botao-admin">
+        <button type="submit" id="entrar" disabled>Entrar</button>
+    </div>
+  </form>
+</div>
+
+  </body>
+</html>

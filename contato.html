@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="api.js"></script>
+    <script src="jquery-3.6.4.min.js"></script>
+</head>
+<body>
+    <ul class="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="admin.html">Área Admin</a></li>
+        <li><a href="mensagens.html">Mensagens Recebidas</a></li>
+    </ul>
+    <div class="content">
+        <h1 class="titulo-admin">Contatos</h1>
+        <form class="form-login">
+            <div class="form-group">
+                <label for="name">Nome:</label>
+                <input type="name" id="name" onchange="obterMensagens()" name="name" placeholder="Seu nome...">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" onchange="obterMensagens()" name="email" placeholder="Seu email...">
+            </div>
+            <div class="form-mensage">
+                <label for="text">Mensagem:</label>
+                <input type="text" id="text" onchange="obterMensagens()" name="text" size="40">
+            </div>
+            <div class="botao-admin">
+                <button type="button" disabled="true" id="entrar_email">Entrar</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
